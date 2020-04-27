@@ -1,0 +1,42 @@
+https://github.com/PacktPublishing/Learn-Go-in-3-Hours
+
+
+A list of popular GO libraries
+
+https://github.com/avelino/awesome-go
+
+
+*** Dep is a dependency management tool for Go
+https://golang.github.io/dep/
+
+When using 3rd party libraries need to use Dep to control vendor files for versioning capabilities, install Dep with:
+$ curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+
+https://golang.github.io/dep/docs/introduction.html
+
+on Windows:
+https://github.com/golang/dep/releases
+copy the binary to the Go Bin directory (e.g. c:\dev\src\Go\bin) and rename to "dep.exe"
+
+from in Go project src directory (e.g. c:\dev\src\go\src\local\language) and from command prompt run:
+> dep init
+PS> & "$env:GOPATH\bin\dep" init
+
+creates Gopkg.toml and Gopkg.lock and vendor/
+
+* NOTE: if new third party libraries are added or updated then use:
+> dep ensure
+PS> & "$env:GOPATH\bin\dep" ensure
+* to update vendor and package lock information
+
+SELECT
+Select statements make concurrency in Go interesting.
+
+UNCONVERED:
+- Contexts
+- Reflection
+- Defer
+- Panic and Recover
+- Complex numbers
+- Atomics and Mutexes
+- Copy slices
